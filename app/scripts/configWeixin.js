@@ -1,7 +1,7 @@
 /* jshint devel:true */
 (function configWeixin () {
   var ticketRequest = new XMLHttpRequest();
-  ticketRequest.open('GET', 'https://api.roomhunter.us/v1/ticket?url=http://mrketing.roomhunter.us/where-to-live', true);
+  ticketRequest.open('GET', 'https://api.roomhunter.us/v1/ticket?url=http://marketing.roomhunter.us/where-to-live', true);
   ticketRequest.responseType = 'json';
   ticketRequest.onload = function() {
     var status = this.status;
