@@ -1,1 +1,0 @@
-wx.ready(function(){wx.checkJsApi({jsApiList:["onMenuShareTimeline"],success:function(n){}}),wx.onMenuShareAppMessage({title:"鸡总XXX",desc:"1111",link:"111",imgUrl:"111",type:"link",dataUrl:"",success:function(){},cancel:function(){}}),wx.getLocation({success:function(n){alert(JSON.stringify(n))},cancel:function(n){alert("鐢ㄦ埛鎷掔粷鎺堟潈鑾峰彇鍦扮悊浣嶇疆")}})}),wx.error(function(n){});
