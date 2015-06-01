@@ -23,14 +23,6 @@ wx.ready(function(){
       // 用户取消分享后执行的回调函数
     }
   });
-  wx.getLocation({
-    success: function (res) {
-      alert(JSON.stringify(res));
-    },
-    cancel: function (res) {
-      alert('鐢ㄦ埛鎷掔粷鎺堟潈鑾峰彇鍦扮悊浣嶇疆');
-    }
-  });
 });
 wx.error(function(res){
 
