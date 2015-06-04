@@ -23,8 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header > .logo {
   margin: 0;
-  height: 40px;
-  /*padding: 15px 0;*/
+  height: 30px;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   position: absolute;
