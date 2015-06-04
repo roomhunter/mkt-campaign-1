@@ -1,8 +1,9 @@
 /* jshint devel:true */
 (function configWeixin () {
   var ticketRequest = new XMLHttpRequest();
-  alert(ticketRequest);
   var url = location.href.split('#')[0];
+  alert(url);
+
   ticketRequest.open('GET', 'https://test.api.roomhunter.us/v1/ticket?url=' + encodeURI(url), true);
   ticketRequest.responseType = 'json';
   ticketRequest.onload = function() {
