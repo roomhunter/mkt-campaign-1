@@ -19,40 +19,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header {
   height: 70px;
+  position: relative;
 }
 .header > .logo {
   margin: 0;
   height: 40px;
-  padding: 15px 0;
+  /*padding: 15px 0;*/
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
-.header > .logo > img {
-  height: 100%;
-  width: auto;
+
+.btn-link {
+  text-decoration: none;
+  color: #666;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .container {
   max-width: 768px;
   margin: 0 auto;
 }
-.debut {
-  background-image: url("../images/manhattan.jpg");
-  background-position: center;
-  background-size: cover;
+.game {
   position: relative;
   width: 100%;
-  padding-bottom: 100%;
-  color: #ffffff;
-  overflow-x: hidden;
-}
-.function-box {
-  height: 200px;
-  width: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -200px;
+  min-height: 200px;
 }
 
 .title {
