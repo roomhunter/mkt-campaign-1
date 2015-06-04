@@ -2,9 +2,11 @@
 var place;
 
 function submitMyName() {
+  //e.preventDefault();
   var name = document.getElementById('name').value;
   place = places[getIndexOf(name, places)];
   setViewBy(place);
+  return false;
 }
 function setViewBy(place) {
   var title = document.getElementById('place-title');
