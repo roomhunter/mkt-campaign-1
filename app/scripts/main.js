@@ -5,10 +5,10 @@ function submitMyName() {
   var name = document.getElementById('name').value;
   var place = places[getIndexOf(name, places)];
   wx.onMenuShareAppMessage({
-    title: '我在美国会住: ' + place.title + '测测你在美国会住在哪里？', // 分享标题
+    title: '我在美国会住: ' + place.title + '。测测你在美国会住在哪里？', // 分享标题
     desc: place.description, // 分享描述
     link: 'http://marketing.roomhunter.us/where-to-live', // 分享链接
-    imgUrl: place.imgUrl + '!wxShareImage', // 分享图标
+    imgUrl: place.imageUrl + '!wxShareImage', // 分享图标
     type: 'link', // 分享类型,music、video或link，不填默认为link
     dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
     success: function () {
@@ -21,7 +21,7 @@ function submitMyName() {
   wx.onMenuShareTimeline({
     title: '我在美国会住: ' + place.title + '测测你在美国会住在哪里？', // 分享标题
     link: 'http://marketing.roomhunter.us/where-to-live', // 分享链接
-    imgUrl: place.imgUrl + '!wxShareImage', // 分享图标
+    imgUrl: place.imageUrl + '!wxShareImage', // 分享图标
     success: function () {
       // 用户确认分享后执行的回调函数
     },
