@@ -1,6 +1,26 @@
 {
   "styles/main.css": "styles/main-18145fba.css",
   "styles/vendor.css": "styles/vendor-b1da7972.css",
-  "scripts/main.js": "scripts/main-27e81339.js",
-  "images/logo.png": "images/logo-55888b6d.png"
+  "scripts/main.js": "scripts/main-c1078887.js",
+  "images/headquarter.jpg": "images/headquarter-4b4ebb81.jpg",
+  "images/neverland.jpg": "images/neverland-50befc80.jpg",
+  "images/bedroom.png": "images/bedroom-f67201d4.png",
+  "images/boston.png": "images/boston-8bd20c9a.png",
+  "images/brooklyn.png": "images/brooklyn-9e514587.png",
+  "images/canyon.png": "images/canyon-130e7331.png",
+  "images/central-park.png": "images/central-park-d2cc0152.png",
+  "images/club.png": "images/club-40a5846a.png",
+  "images/corn.png": "images/corn-3261222a.png",
+  "images/girl.png": "images/girl-eacadeac.png",
+  "images/hawaii.png": "images/hawaii-19351982.png",
+  "images/horse.png": "images/horse-69ae0f31.png",
+  "images/jail.png": "images/jail-cd8b9ca6.png",
+  "images/logo.png": "images/logo-55888b6d.png",
+  "images/motel.png": "images/motel-cf4ef976.png",
+  "images/mushroom.png": "images/mushroom-d14e8a53.png",
+  "images/sea.png": "images/sea-030e8e02.png",
+  "images/single.png": "images/single-4f515f3c.png",
+  "images/water-house.png": "images/water-house-78865663.png",
+  "images/wayne.png": "images/wayne-2269bc8b.png",
+  "images/white-house.png": "images/white-house-2c2e3771.png"
 }

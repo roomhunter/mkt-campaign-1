@@ -8,7 +8,7 @@ function submitMyName() {
     title: '我在美国会住: ' + place.title + '测测你在美国会住在哪里？', // 分享标题
     desc: place.description, // 分享描述
     link: 'http://marketing.roomhunter.us/where-to-live', // 分享链接
-    imgUrl: '111', // 分享图标
+    imgUrl: place.imgUrl + '!wxShareImage', // 分享图标
     type: 'link', // 分享类型,music、video或link，不填默认为link
     dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
     success: function () {
@@ -20,8 +20,8 @@ function submitMyName() {
   });
   wx.onMenuShareTimeline({
     title: '我在美国会住: ' + place.title + '测测你在美国会住在哪里？', // 分享标题
-    link: '', // 分享链接
-    imgUrl: '', // 分享图标
+    link: 'http://marketing.roomhunter.us/where-to-live', // 分享链接
+    imgUrl: place.imgUrl + '!wxShareImage', // 分享图标
     success: function () {
       // 用户确认分享后执行的回调函数
     },
@@ -35,6 +35,8 @@ function submitMyName() {
 function setViewBy(place) {
   var title = document.getElementById('place-title');
   var description = document.getElementById('place-description');
+  var image = document.getElementById('place-image');
+  image.setAttribute('src', place.imgUrl);
   title.textContent = place.title;
   description.textContent = place.description;
 }
