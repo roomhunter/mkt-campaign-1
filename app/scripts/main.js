@@ -36,7 +36,7 @@ function setViewBy(place) {
   var title = document.getElementById('place-title');
   var description = document.getElementById('place-description');
   var image = document.getElementById('place-image');
-  image.setAttribute('src', place.imgUrl);
+  image.setAttribute('src', place.imageUrl);
   title.textContent = place.title;
   description.textContent = place.description;
 }
