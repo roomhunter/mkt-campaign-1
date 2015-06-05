@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
   min-height: 200px;
+  visibility: hidden;
+}
+.game.ready {
+  visibility: visible;
 }
 
 .title {
