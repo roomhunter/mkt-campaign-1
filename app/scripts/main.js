@@ -3,7 +3,8 @@
 function submitMyName() {
   //e.preventDefault();
   var name = document.getElementById('name').value;
-  var place = places[getIndexOf(name, places)];
+  var index = getIndexOf(name, places);
+  var place = places[index];
   wx.onMenuShareAppMessage({
     title: '我在美国会住: ' + place.title + '。测测你在美国会住在哪里？', // 分享标题
     desc: place.description, // 分享描述
@@ -44,7 +45,9 @@ function getIndexOf(str, arr) {
   for(var ret = 0, i = 0, len = str.length; i < len; i++) {
     ret = (31 * ret + str.charCodeAt(i)) << 0;
   }
-  return ret % arr.length;
+  var length = arr.length;
+  // ensure positive remainder
+  return ((ret % length) + length) % length;
 }
 wx.ready(function(){
   // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
