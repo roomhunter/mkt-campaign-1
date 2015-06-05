@@ -43,7 +43,7 @@ var places = [{
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/cd8b9ca6c38fb3d478026700d8010954.png'
 }, {
     title: '白宫',
-    description: '恭喜你入住美国的权力中心，和奥巴马成为室友！你可以去知乎回答“住在白宫时怎样一种体验？”这个问题了:)',
+    description: '恭喜你入住美国的权力中心，和奥巴马成为室友！你可以去知乎回答“住在白宫是怎样一种体验？”这个问题了:)',
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/2c2e377122d136866b9b158d903ffb1b.png'
 }, {
     title: '加州圣巴巴拉梦幻庄园',
