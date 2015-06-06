@@ -8,6 +8,15 @@ body {
   color: #222;
   letter-spacing: 0.08em;
   overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 .text-light {
   font-weight: 200;
@@ -38,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   max-width: 600px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 .game {
   position: relative;
@@ -114,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 100%;
   bottom: 0;
-  padding: 40px;
+  padding: 40px 0;
   text-align: center;
 }
 
