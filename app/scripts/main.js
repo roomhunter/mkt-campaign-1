@@ -13,12 +13,12 @@
   };
   input.onfocus = function () {
     gameInputView.classList.add('scroll-some');
-    gameInputView.classList.add('scroll-top');
+    //gameInputView.classList.add('scroll-top');
 
   };
   input.onblur = function () {
     gameInputView.classList.remove('scroll-some');
-    gameInputView.classList.remove('scroll-top');
+    //gameInputView.classList.remove('scroll-top');
 
   };
 })();
