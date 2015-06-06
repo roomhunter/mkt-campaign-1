@@ -216,3 +216,35 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
+@-webkit-keyframes scrollTop {
+  0% {
+    -webkit-transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 100px, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes scrollTop {
+  0% {
+    -webkit-transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 100px, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.scroll-top {
+  -webkit-animation-name: scrollTop;
+  animation-name: scrollTop;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
