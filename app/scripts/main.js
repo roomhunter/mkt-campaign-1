@@ -37,6 +37,9 @@ function setViewBy(place) {
   var title = document.getElementById('place-title');
   var description = document.getElementById('place-description');
   var image = document.getElementById('place-image');
+  var gameView = document.getElementsByClassName('game')[0];
+  gameView.classList.add('offset-to-left');
+  gameView.classList.add('slide-to-left');
   image.setAttribute('src', place.imageUrl);
   title.textContent = place.title;
   description.textContent = place.description;

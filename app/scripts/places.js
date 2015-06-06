@@ -80,7 +80,7 @@ var places = [{
 }, {
     title: 'RoomHunter纽约全球总部的办公室',
     description: '恭喜你！能够进入严格保密的RoomHunter纽约全球总部，这是一个连Google Map都搜索不到的未知之地。RoomHunter是一家炙手可热的科技公司，致力于将租房变得更简单。',
-    imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/4b4ebb81794ba23e65a85d5666e1abbe.jpg'
+    imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/3ef8c91df56500c5552b4e5fe1b75970.jpg'
 }];
 function getRandomPlace() {
     var index = Math.floor(Math.random() * places.length);

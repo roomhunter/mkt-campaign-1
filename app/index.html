@@ -19,28 +19,25 @@
 
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <img class="logo" src="images/logo.png" alt="RoomHunter">
-        <a class="btn-link" href="http://m.roomhunter.us">想改变命运?</a>
+    <div class="game ready">
+      <div class="game-input">
+        <img class="bagua" src="images/bagua.png">
+        <form class="" onsubmit="return submitMyName()">
+          <label class="input-label" for="name">输入你的名字</label>
+          <input class="name-input" type="text" placeholder="张三" id="name">
+          <button class="rh-btn" type="submit">立即测试</button>
+        </form>
       </div>
-      <div class="game ready">
-        <div class="game-input">
-          <form class="" onsubmit="return submitMyName()">
-            <input type="text" placeholder="输入你的名字" id="name">
-            <button type="submit">查看结果</button>
-          </form>
-        </div>
-        <div class="game-result">
-          <h3 class="" id="place-title"></h3>
-          <p class="" id="place-description"></p>
+      <div class="game-result">
+        <div class="container">
+          <h3 class="name-title"><span class="text-muted" id="name-title">史蒂夫</span>在美国会住：</h3>
+          <h3 class="place-title text-rh " id="place-title">是东方时尚大方</h3>
+          <p class="place-description text-left" id="place-description">sfsafsdfsd大法师地方</p>
           <img class="place-image" id="place-image" src="">
+          <a class="btn-link text-rh" href="http://m.roomhunter.us">立即感受极致租房体验</a>
+          <img class="logo" src="images/logo.png" alt="RoomHunter">
         </div>
       </div>
-    </div>
-    <div class="footer company-info">
-      <p><a target="_blank" class="beian" href="http://www.miitbeian.gov.cn/">沪ICP备15009416号-1</a></p>
-      <p>Copyright © 2015 <a target="_blank" href="https://www.linkedin.com/company/roomhunter-inc-">RoomHunter, Inc.</a></p>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
