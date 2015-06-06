@@ -30,18 +30,20 @@ function submitMyName() {
       // 用户取消分享后执行的回调函数
     }
   });
-  setViewBy(place);
+  setViewBy(place, name);
   return false;
 }
-function setViewBy(place) {
+function setViewBy(place, name) {
   var title = document.getElementById('place-title');
   var description = document.getElementById('place-description');
   var image = document.getElementById('place-image');
+  var nameSpan = document.getElementById('name-title');
   var gameView = document.getElementsByClassName('game')[0];
   gameView.classList.add('offset-to-left');
   gameView.classList.add('slide-to-left');
   image.setAttribute('src', place.imageUrl);
   title.textContent = place.title;
+  nameSpan.textContent = name;
   description.textContent = place.description;
 }
 function getIndexOf(str, arr) {

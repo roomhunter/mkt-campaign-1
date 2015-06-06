@@ -7,6 +7,7 @@ body {
   height: 100%;
   color: #222;
   letter-spacing: 0.08em;
+  overflow-x: hidden;
 }
 .text-light {
   font-weight: 200;
@@ -43,7 +44,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   visibility: hidden;
-  /*left: -100%;*/
 }
 .game.ready {
   visibility: visible;
@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-appearance: none;
   margin-top: 60px;
   outline: none;
+  height: 38px;
 }
 .btn-link {
   text-decoration: none;
@@ -123,11 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .logo {
   width: 130px;
-  /*position: absolute;*/
   margin: 60px auto 40px auto;
-  /*bottom: 40px;*/
-  /*left: 50%;*/
-  /*margin-left: -65px;*/
 }
 
 @-webkit-keyframes slideInLeft {
