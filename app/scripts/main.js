@@ -2,6 +2,7 @@
 (function setup(){
   var input = document.getElementById('name');
   var submitBtn = document.getElementById('submit-btn');
+  var gameInputView = document.getElementsByClassName('game-input')[0];
   input.oninput = function () {
     if (input.value.length > 0) {
       submitBtn.classList.remove('disabled');
@@ -9,6 +10,12 @@
     else {
       submitBtn.classList.add('disabled');
     }
+  };
+  input.onfocus = function () {
+    gameInputView.classList.add('scroll-some');
+  };
+  input.onblur = function () {
+    gameInputView.classList.remove('scroll-some');
   };
 })();
 

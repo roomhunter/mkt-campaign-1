@@ -76,6 +76,10 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
+.game-input.scroll-some {
+  /* height of keyboard */
+  top: -200px;
+}
 .offset-to-left {
   left: -100%;
 }
