@@ -18,11 +18,13 @@ function submitMyName() {
   var index = getIndexOf(name, places);
   var place = places[index];
   var btn = document.getElementById('submit-btn');
+  var label = document.getElementById('name-label');
   if (name.length < 1) {
     return false;
   }
   btn.classList.add('loading');
   btn.lastElementChild.textContent = '为你测算中...';
+  label.textContent = '为你测算中...';
   wx.onMenuShareAppMessage({
     title: '我在美国会住: ' + place.title + '。测测你在美国会住在哪里？', // 分享标题
     desc: place.description, // 分享描述
