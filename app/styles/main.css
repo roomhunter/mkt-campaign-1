@@ -75,15 +75,13 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  /*-webkit-backface-visibility: hidden;*/
-  -webkit-transform-style: preserve-3d;
+  /*-webkit-transition: 0.5s ease-in-out;*/
+  /*transition: 0.5s ease-in-out;*/
+  /*-webkit-transform-style: preserve-3d;*/
 }
 .game-input.scroll-some {
   /* height of keyboard */
   transform: translate3d(0, -100px, 0);
-  /*top: -100px;*/
 }
 .offset-to-left {
   left: -100%;
