@@ -1,10 +1,11 @@
 {
-  "styles/main.css": "styles/main-73529571.css",
+  "styles/main.css": "styles/main-3595170a.css",
   "styles/vendor.css": "styles/vendor-b1da7972.css",
-  "scripts/main.js": "scripts/main-f13fbcd1.js",
-  "images/bg.jpg": "images/bg-9dd9b458.jpg",
+  "scripts/main.js": "scripts/main-3737a0e1.js",
+  "images/bg.jpg": "images/bg-e715f441.jpg",
   "images/headquarter.jpg": "images/headquarter-3ef8c91d.jpg",
   "images/neverland.jpg": "images/neverland-50befc80.jpg",
+  "images/logo-square.jpeg": "images/logo-square-a0c0bf0a.jpeg",
   "images/bagua.png": "images/bagua-df9682cc.png",
   "images/bedroom.png": "images/bedroom-f67201d4.png",
   "images/boston.png": "images/boston-8bd20c9a.png",
@@ -24,5 +25,6 @@
   "images/single.png": "images/single-4f515f3c.png",
   "images/water-house.png": "images/water-house-78865663.png",
   "images/wayne.png": "images/wayne-2269bc8b.png",
+  "images/wechat-qr.png": "images/wechat-qr-3fe1fe20.png",
   "images/white-house.png": "images/white-house-2c2e3771.png"
 }

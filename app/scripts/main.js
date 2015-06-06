@@ -1,10 +1,28 @@
 /* jshint devel:true */
+(function setup(){
+  var input = document.getElementById('name');
+  var submitBtn = document.getElementById('submit-btn');
+  input.oninput = function () {
+    if (input.value.length > 0) {
+      submitBtn.classList.remove('disabled');
+    }
+    else {
+      submitBtn.classList.add('disabled');
+    }
+  };
+})();
 
 function submitMyName() {
   //e.preventDefault();
   var name = document.getElementById('name').value;
   var index = getIndexOf(name, places);
   var place = places[index];
+  var btn = document.getElementById('submit-btn');
+  if (name.length < 1) {
+    return false;
+  }
+  btn.classList.add('loading');
+  btn.lastElementChild.textContent = '为你测算中...';
   wx.onMenuShareAppMessage({
     title: '我在美国会住: ' + place.title + '。测测你在美国会住在哪里？', // 分享标题
     desc: place.description, // 分享描述
@@ -30,21 +48,26 @@ function submitMyName() {
       // 用户取消分享后执行的回调函数
     }
   });
-  setViewBy(place, name);
+  setGameResultBy(place, name);
+  window.setTimeout(function (){
+    switchView();
+  }, 2000);
   return false;
 }
-function setViewBy(place, name) {
+function setGameResultBy(place, name) {
   var title = document.getElementById('place-title');
   var description = document.getElementById('place-description');
   var image = document.getElementById('place-image');
   var nameSpan = document.getElementById('name-title');
-  var gameView = document.getElementsByClassName('game')[0];
-  gameView.classList.add('offset-to-left');
-  gameView.classList.add('slide-to-left');
   image.setAttribute('src', place.imageUrl);
   title.textContent = place.title;
   nameSpan.textContent = name;
   description.textContent = place.description;
+}
+function switchView () {
+  var gameView = document.getElementsByClassName('game')[0];
+  gameView.classList.add('offset-to-left');
+  gameView.classList.add('slide-to-left');
 }
 function getIndexOf(str, arr) {
   for(var ret = 0, i = 0, len = str.length; i < len; i++) {

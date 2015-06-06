@@ -12,6 +12,10 @@ body {
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
 .wrapper {
   height: 100%;
   width: 100%;
@@ -54,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   visibility: hidden;
+  left: -100%;
 }
 .game.ready {
   visibility: visible;
@@ -75,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 .bagua {
   width: 90px;
   margin: 50px;
+  border-radius: 15px;
 }
 .name-input {
   display: block;
@@ -108,13 +114,33 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 60px;
   outline: none;
   height: 38px;
+  position: relative;
+}
+.rh-btn > img {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  height: 20px;
+  margin-top: -10px;
+  visibility: hidden;
+}
+.rh-btn.loading {
+  /*background-color: #666;*/
+  pointer-events: none;
+}
+.rh-btn.loading > img {
+  visibility: visible;
+}
+.rh-btn.disabled {
+  background-color: #666;
+  pointer-events: none;
 }
 .btn-link {
   text-decoration: none;
   padding: 10px;
   border: 1px solid #f7991e;
   border-radius: 3px;
-  display: block;
+  display: inline-block;
   width: 200px;
   margin: 0 auto;
 }
@@ -127,14 +153,27 @@ h1, h2, h3, h4, h5, h6 {
   padding: 40px 0;
   text-align: center;
 }
-
+.game-result h3 {
+  margin-bottom: 5px;
+}
+.game-result p {
+  margin: 5px auto 30px auto;
+}
+.game-result a {
+  margin-bottom: 20px;
+}
 .place-image {
   max-width: 100%;
   margin: 20px auto;
 }
+.wechat-qr {
+  height: 200px;
+  display: block;
+  margin: 30px auto;
+}
 .logo {
   width: 130px;
-  margin: 60px auto 40px auto;
+  margin: 40px auto 40px auto;
 }
 
 @-webkit-keyframes slideInLeft {
