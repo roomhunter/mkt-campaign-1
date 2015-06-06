@@ -63,19 +63,20 @@ h1, h2, h3, h4, h5, h6 {
 .game.ready {
   visibility: visible;
 }
-.game.offset-to-left {
-  left: -100%;
-}
+
 .game-input {
   background-image: url(../images/bg.jpg);
   background-size: cover;
   text-align: center;
   width: 100%;
   min-height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
+}
+.offset-to-left {
+  left: -100%;
 }
 .bagua {
   width: 90px;

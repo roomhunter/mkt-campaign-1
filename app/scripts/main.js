@@ -66,6 +66,8 @@ function setGameResultBy(place, name) {
 }
 function switchView () {
   var gameView = document.getElementsByClassName('game')[0];
+  var gameInputView = document.getElementsByClassName('game-input')[0];
+  gameInputView.classList.add('offset-to-left');
   gameView.classList.add('offset-to-left');
   gameView.classList.add('slide-to-left');
 }
