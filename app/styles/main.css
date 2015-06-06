@@ -80,7 +80,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .game-input.scroll-some {
   /* height of keyboard */
-  transform: translate3d(0, -100px, 0);
+  /*transform: translate3d(0, -100px, 0);*/
+  top: -100px;
 }
 .offset-to-left {
   left: -100%;
