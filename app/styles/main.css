@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   bottom: 0;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 .offset-to-left {
@@ -153,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   padding: 40px 0;
   text-align: center;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 .game-result h3 {
