@@ -12,7 +12,6 @@
         gameInputView.classList.remove('offset-to-left');
         gameView.classList.remove('offset-to-left');
         gameView.classList.add('slide-to-right');
-        gameInputView.classList.add('slide-to-right');
         window.setTimeout(function (){
             gameView.classList.add('played');
         }, 1000);

@@ -73,9 +73,9 @@ function setGameResultBy(place, name) {
 function toResult () {
   var gameView = document.getElementsByClassName('game')[0];
   var gameInputView = document.getElementsByClassName('game-input')[0];
-  gameInputView.classList.remove('slide-to-right');
   gameView.classList.remove('slide-to-right');
-  gameInputView.classList.add('slide-to-left');
+  gameInputView.classList.add('offset-to-left');
+  gameView.classList.add('offset-to-left');
   gameView.classList.add('slide-to-left');
 }
 function getIndexOf(str, arr) {
