@@ -56,6 +56,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   visibility: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   /*left: -100%;*/
 }
 .game.ready {
@@ -75,16 +77,17 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  /*-webkit-transition: 0.5s ease-in-out;*/
-  /*transition: 0.5s ease-in-out;*/
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   /*-webkit-transform-style: preserve-3d;*/
 }
-.game-input.scroll-some {
+/*.game-input.scroll-some {*/
   /* height of keyboard */
-  transform: translate3d(0, -100px, 0);
-}
+  /*transform: translate3d(0, -100px, 0);*/
+/*}*/
 .offset-to-left {
-  left: -100%;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 .bagua {
   width: 90px;
@@ -134,7 +137,6 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 .rh-btn.loading {
-  /*background-color: #666;*/
   pointer-events: none;
 }
 .rh-btn.loading > img {
@@ -185,37 +187,4 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
   width: 130px;
   margin: 40px auto 40px auto;
-}
-
-@-webkit-keyframes slideInLeft {
-  0% {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideInLeft {
-  0% {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slide-to-left {
-  -webkit-animation-name: slideInLeft;
-  animation-name: slideInLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
 }

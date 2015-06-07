@@ -11,16 +11,6 @@
       submitBtn.classList.add('disabled');
     }
   };
-  input.onfocus = function () {
-    //gameInputView.classList.add('scroll-some');
-    //gameInputView.classList.add('scroll-top');
-
-  };
-  input.onblur = function () {
-    //gameInputView.classList.remove('scroll-some');
-    //gameInputView.classList.remove('scroll-top');
-
-  };
 })();
 
 function submitMyName() {
@@ -82,7 +72,6 @@ function switchView () {
   var gameInputView = document.getElementsByClassName('game-input')[0];
   gameInputView.classList.add('offset-to-left');
   gameView.classList.add('offset-to-left');
-  gameView.classList.add('slide-to-left');
 }
 function getIndexOf(str, arr) {
   for(var ret = 0, i = 0, len = str.length; i < len; i++) {
