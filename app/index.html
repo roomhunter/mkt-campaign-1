@@ -67,7 +67,7 @@
         var ticketRequest = new XMLHttpRequest();
         var url = location.href.split('#')[0];
 
-        ticketRequest.open('POST', 'https://test.api.roomhunter.us/v1/ticket', true);
+        ticketRequest.open('POST', 'https://api.roomhunter.us/v1/ticket', true);
         ticketRequest.responseType = 'json';
         ticketRequest.setRequestHeader('Content-Type', 'application/json');
         ticketRequest.onload = function() {
