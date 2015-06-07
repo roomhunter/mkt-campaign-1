@@ -15,7 +15,7 @@ function submitMyName() {
   btn.lastElementChild.textContent = '为你测算中...';
   label.textContent = '为你测算中...';
   wx.onMenuShareAppMessage({
-    title: '我在美国会住: ' + place.title + '。测测你在美国会住在哪里？', // 分享标题
+    title: name + '我在美国会住: ' + place.title + '。测测你在美国会住在哪里？', // 分享标题
     desc: place.description, // 分享描述
     link: getSharableLink(index, name), // 分享链接
     imgUrl: place.imageUrl + '!wxShareImage', // 分享图标
@@ -29,7 +29,7 @@ function submitMyName() {
     }
   });
   wx.onMenuShareTimeline({
-    title: '我在美国会住: ' + place.title + '。测测你在美国会住在哪里？', // 分享标题
+    title: name + '在美国会住: ' + place.title + '。测测你在美国会住在哪里？', // 分享标题
     link: getSharableLink(index, name), // 分享链接
     imgUrl: place.imageUrl + '!wxShareImage', // 分享图标
     success: function () {
