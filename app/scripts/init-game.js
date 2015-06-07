@@ -4,7 +4,17 @@
     var input = document.getElementById('name');
     var submitBtn = document.getElementById('submit-btn');
     var gameInputView = document.getElementsByClassName('game-input')[0];
+    var toGameBtn = document.getElementById('to-game');
 
+    toGameBtn.onclick = function () {
+        var gameView = document.getElementsByClassName('game')[0];
+        var gameInputView = document.getElementsByClassName('game-input')[0];
+        gameInputView.classList.remove('offset-to-left');
+        gameView.classList.remove('offset-to-left');
+        window.setTimeout(function (){
+            gameView.classList.add('played');
+        }, 1000);
+    };
     input.oninput = function () {
         if (input.value.length > 0) {
             submitBtn.classList.remove('disabled');
