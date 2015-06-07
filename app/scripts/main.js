@@ -69,8 +69,10 @@ function getIndexOf(str, arr) {
     ret = (31 * ret + str.charCodeAt(i)) << 0;
   }
   var length = arr.length;
+  var lengthFaked = length + 2;
   // ensure positive remainder
-  return ((ret % length) + length) % length;
+  var indexFaked = ((ret % lengthFaked) + lengthFaked) % lengthFaked;
+  return (indexFaked < length) ? indexFaked : length - 1;
 }
 function getSharableLink(index, name) {
   var url = 'http://marketing.roomhunter.us/where-to-live?' + 'name=' + name + '&placeIndex=' + index;
