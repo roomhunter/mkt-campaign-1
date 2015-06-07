@@ -58,7 +58,6 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  /*left: -100%;*/
 }
 .game.ready {
   visibility: visible;
@@ -77,17 +76,15 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  /*-webkit-transition: 0.5s ease-in-out;*/
+  /*transition: 0.5s ease-in-out;*/
   /*-webkit-transform-style: preserve-3d;*/
 }
-/*.game-input.scroll-some {*/
-  /* height of keyboard */
-  /*transform: translate3d(0, -100px, 0);*/
-/*}*/
+
 .offset-to-left {
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
+  left: -100%;
+  /*-webkit-transform: translate3d(-100%, 0, 0);*/
+  /*transform: translate3d(-100%, 0, 0);*/
 }
 .bagua {
   width: 90px;
@@ -212,4 +209,70 @@ h1, h2, h3, h4, h5, h6 {
 }
 .game.played > .game-result .share-to-friend {
   display: block;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slide-to-left {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  left: -100%;
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slide-to-right {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  left: 0;
 }

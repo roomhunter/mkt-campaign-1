@@ -49,24 +49,15 @@ function submitMyName() {
 function toGame() {
   var gameView = document.getElementsByClassName('game')[0];
   var gameInputView = document.getElementsByClassName('game-input')[0];
-  gameInputView.classList.remove('offset-to-left');
-  gameView.classList.remove('offset-to-left');
+  //gameInputView.classList.remove('offset-to-left');
+  //gameView.classList.remove('offset-to-left');
+  gameView.classList.remove('slide-to-left');
+  gameInputView.classList.remove('slide-to-left');
   window.setTimeout(function (){
     gameView.classList.add('played');
   }, 1000);
 }
 
-function inputChange() {
-  var input = document.getElementById('name');
-  var submitBtn = document.getElementById('submit-btn');
-
-  if (input.value.length > 0) {
-    submitBtn.classList.remove('disabled');
-  }
-  else {
-    submitBtn.classList.add('disabled');
-  }
-}
 // helper
 
 function setGameResultBy(place, name) {
@@ -82,8 +73,10 @@ function setGameResultBy(place, name) {
 function toResult () {
   var gameView = document.getElementsByClassName('game')[0];
   var gameInputView = document.getElementsByClassName('game-input')[0];
-  gameInputView.classList.add('offset-to-left');
-  gameView.classList.add('offset-to-left');
+  gameInputView.classList.remove('slide-to-right');
+  gameView.classList.remove('slide-to-right');
+  gameInputView.classList.add('slide-to-left');
+  gameView.classList.add('slide-to-left');
 }
 function getIndexOf(str, arr) {
   for(var ret = 0, i = 0, len = str.length; i < len; i++) {
