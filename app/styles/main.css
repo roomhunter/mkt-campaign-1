@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.7);
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;*/
   border: 1px solid #aaa;
   border-radius: 3px;
   height: 30px;
@@ -155,6 +155,17 @@ h1, h2, h3, h4, h5, h6 {
   width: 200px;
   margin: 0 auto;
 }
+.share-to-friend {
+  border-color: #666;
+  color: #666;
+  display: none;
+}
+.start-game {
+  display: block;
+}
+.link-to-rh {
+  display: none;
+}
 .game-result {
   position: absolute;
   width: 100%;
@@ -172,9 +183,10 @@ h1, h2, h3, h4, h5, h6 {
 .game-result p {
   margin: 5px auto 30px auto;
 }
-.game-result a {
+.game-result .btn-link {
   margin-bottom: 20px;
 }
+
 .place-image {
   max-width: 100%;
   margin: 20px auto;
@@ -187,4 +199,17 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
   width: 130px;
   margin: 40px auto 40px auto;
+  display: none;
+}
+.game.played > .game-result .link-to-rh {
+  display: block;
+}
+.game.played > .game-result .start-game {
+  display: none;
+}
+.game.played > .game-result .logo {
+  display: block;
+}
+.game.played > .game-result .share-to-friend {
+  display: block;
 }

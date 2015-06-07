@@ -20,23 +20,24 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="game ready">
-        <div class="game-input">
+      <div class="game ready offset-to-left">
+        <div class="game-input offset-to-left">
           <img class="bagua" src="images/logo-square.jpeg">
           <form class="" onsubmit="return submitMyName()">
             <label class="input-label" id="name-label" for="name">输入你的名字</label>
-            <input class="name-input" type="text" placeholder="张三" id="name">
+            <input class="name-input" type="text" placeholder="张三" id="name"">
             <button class="rh-btn disabled" type="submit" id="submit-btn"><img src="images/loading.svg"><span>立即测试</span></button>
           </form>
         </div>
         <div class="game-result">
           <div class="container">
-            <h3 class="name-title"><span class="text-muted" id="name-title">史蒂夫</span>在美国会住：</h3>
-            <h3 class="place-title text-rh " id="place-title">是东方时尚大方</h3>
+            <h3 class="name-title"><span class="text-muted" id="name-title"></span>在美国会住：</h3>
+            <h3 class="place-title text-rh " id="place-title"></h3>
             <img class="place-image" id="place-image" src="http://roomhunter-images.b0.upaiyun.com/marketing-places/8bd20c9aba56b5412bd259459ea81eb3.png">
-            <p class="place-description text-left" id="place-description">sfsafsdfsd大法师地方</p>
-            <a class="btn-link text-rh" href="http://m.roomhunter.us">立即感受极致租房体验</a>
-            <img class="wechat-qr" src="images/wechat-qr.png">
+            <p class="place-description text-left" id="place-description"></p>
+            <a class="btn-link text-rh link-to-rh" href="http://m.roomhunter.us">立即感受极致租房体验</a>
+            <a class="btn-link share-to-friend" href="#">右上角分享给朋友</a>
+            <a class="btn-link text-rh start-game" href="#" onclick="toGame()">测测我住哪儿</a>
             <img class="logo" src="images/logo.png" alt="RoomHunter">
           </div>
         </div>
@@ -88,7 +89,6 @@
           }
         };
         ticketRequest.send(JSON.stringify({url: url}));
-
       })();
     </script>
     <!-- build:js scripts/plugins.js -->
@@ -97,6 +97,7 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/places.js"></script>
+    <script src="scripts/init-game.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 </body>
