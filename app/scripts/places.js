@@ -26,8 +26,8 @@ var places = [{
     description: "以下是你和室友的日常对话：“Wa Dim it is now ”“Excuse me？”“#$%@#$#$%!”“Sorry？”“It's valy valy diffigot do understand you^”“Pardon？”",
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/5bd6e0498fc729577604353c0e108e48.png'
 }, {
-    title: '曼哈顿单身公寓',
-    description: '能在寸土寸金的曼哈顿租得起一套单身公寓绝对能让你立刻跻身“黄金单身汉”的行列，数不尽的爬梯等着你！',
+    title: '曼哈顿单身狗公寓',
+    description: '能在寸土寸金的曼哈顿租得起一套单身公寓绝对能让你立刻跻身“黄金单身狗”的行列，数不尽的爬梯等着你！',
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/4f515f3cb88c5e31651c12a3f3509b2a.png'
 }, {
     title: '佛罗里达阳光海景房',
