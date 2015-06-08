@@ -1,5 +1,5 @@
 /* jshint devel:true */
-function initGameResult () {
+function initGameResultAndWx () {
     var queryString = window.location.search;
     var input = document.getElementById('name');
     var submitBtn = document.getElementById('submit-btn');
@@ -64,17 +64,16 @@ function initGameResult () {
             });
         }
     }
+}
+function parseQueryString(queryString) {
+    var params = {}, queries, temp, i, l;
+    // Split into key/value pairs
+    queries = queryString.split("&");
 
-    function parseQueryString(queryString) {
-        var params = {}, queries, temp, i, l;
-        // Split into key/value pairs
-        queries = queryString.split("&");
-
-        // Convert the array of strings into an object
-        for ( i = 0, l = queries.length; i < l; i++ ) {
-            temp = queries[i].split('=');
-            params[temp[0]] = temp[1];
-        }
-        return params;
+    // Convert the array of strings into an object
+    for ( i = 0, l = queries.length; i < l; i++ ) {
+        temp = queries[i].split('=');
+        params[temp[0]] = temp[1];
     }
+    return params;
 }
