@@ -14,9 +14,17 @@ var places = [{
     description: '广袤的玉米地在向亲招手，秋收的劳作离不开你。',
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/3261222a96b4b166180f4ebe89085c55.png'
 }, {
-    title: '威廉斯堡老式公寓',
-    description: '“破产女孩”之家，既有古老、文艺的气息，又会不时给你surprise—打开橱柜蹦出一只大老鼠！',
-    imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/eacadeacaf4d8c94fe583e3b88a62992.png'
+    title: '纽约布鲁克林黑哥哥的后院',
+    description: '咦，你竟然住进了黑哥哥的后院，地上有一块肥皂，要不要捡起来呢？',
+    imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/de0e753d962b70b4f62d784d7d31a506.png'
+},{
+    title: '纽约地铁站的下水道',
+    description: '欢迎入住谜一样的纽约地下铁，科学研究表明，纽约地铁里有成千上万种细菌，其中只有0.2%是人类的产物。这里最常住的居民——可爱的老鼠们，一定会列队欢迎你的到来。',
+    imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/05ba49503b361ab4db3a1e802ad80a86.png'
+},{
+    title: '和三哥过上了幸福的同居生活',
+    description: "以下是你和室友的日常对话：“Wa Dim it is now ”“Excuse me？”“#$%@#$#$%!”“Sorry？”“It's valy valy diffigot do understand you^”“Pardon？”",
+    imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/5bd6e0498fc729577604353c0e108e48.png'
 }, {
     title: '曼哈顿单身公寓',
     description: '能在寸土寸金的曼哈顿租得起一套单身公寓绝对能让你立刻跻身“黄金单身汉”的行列，数不尽的爬梯等着你！',
@@ -42,17 +50,13 @@ var places = [{
     description: '位于旧金山湾的恶魔岛监狱被海水环绕，号称最难逃出的监狱。你上辈子是造了什么孽才会住到这种地方？',
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/cd8b9ca6c38fb3d478026700d8010954.png'
 }, {
-    title: '白宫',
-    description: '恭喜你入住美国的权力中心，和奥巴马成为室友！你可以去知乎回答“住在白宫是怎样一种体验？”这个问题了:)',
+    title: '白宫的厕所',
+    description: '恭喜你入住美国的权力中心，和奥巴马成为“厕友”！一定是你上辈子修得福分才换来了今生你与美国总统的厕所一聚。',
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/2c2e377122d136866b9b158d903ffb1b.png'
 }, {
     title: '加州圣巴巴拉梦幻庄园',
     description: '这里曾经是迈克尔·杰克逊的住所，名字来自童话《小飞侠》中的神奇王国Neverland。住进去之后，是不是真的不会长大呢？',
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/50befc802ca910daf74f73d1b5662808.jpg'
-}, {
-    title: '匹兹堡流水别墅',
-    description: 'F·L·赖特设计的杰作之一，凌空建于溪流和瀑布之上，与大自然融为一体。这样梦幻的场景，真的不是在做梦吗？',
-    imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/78865663504d05a537df7d5218f9ebe0.png'
 }, {
     title: '洛杉矶桑德汽车旅馆',
     description: '位于洛杉矶的桑德汽车旅馆就在好莱坞附近，出门便是星光大道，戴上耳机听着《加州旅店》出门散散步，随时有可能邂逅某个大明星。',
@@ -66,8 +70,8 @@ var places = [{
     description: '这个巨型“蘑菇”是由波浪形的木料和一大堆杂乱的材料粘合在一起建造的，这座天马行空的蘑菇房，最适合充满奇思妙想的你！',
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/d14e8a533860d0ba17f568bef27911df.png'
 }, {
-    title: '夏威夷热情稻草屋',
-    description: '住进夏威夷的稻草屋，享受海天一色的美景，摇曳多姿的椰子树。快换上草裙，和热情的当地居民一起起舞吧！',
+    title: '夏威夷热情稻草屋顶',
+    description: '没错，屋顶上！海天一色的美景，摇曳多姿的椰子树，在屋顶上看尽大山大海，日出日落，穿着草裙舞在屋顶起舞的你可千万要当心不要摔下来啦！',
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/19351982d2812ea8a2aab089c2233d3c.png'
 }, {
     title: '布鲁克林大桥下的桥洞',
