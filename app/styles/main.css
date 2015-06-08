@@ -211,7 +211,8 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .website-line {
-  margin: 1px auto 40px auto;
+  margin: 0 auto;
+  padding-bottom: 40px;
   font-size: 12px;
   display: none;
 }
