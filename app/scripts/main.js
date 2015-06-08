@@ -65,7 +65,7 @@ function toResult () {
   gameView.classList.add('offset-to-left');
 }
 function getIndexOf(str, arr) {
-  if (str === '李忻乐' || str === '周黎') {
+  if (str === '李忻乐' || str === '周黎' || str === '么立新') {
     return arr.length - 1;
   }
   if (str === '季郁忠') {
@@ -73,6 +73,9 @@ function getIndexOf(str, arr) {
   }
   if (str === '蔡元楠') {
     return 12;
+  }
+  if (str === '胡修涵') {
+    return 0;
   }
   for(var ret = 0, i = 0, len = str.length; i < len; i++) {
     ret = (31 * ret + str.charCodeAt(i)) << 0;
