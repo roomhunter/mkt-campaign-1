@@ -82,8 +82,8 @@ var places = [{
     description: '变身《五十度灰》女主角，入住霸道总裁卧室……接下来，@#$%（此处省略一万字）',
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/f67201d475d92f72a0fcc4526570e3a5.png'
 }, {
-    title: 'RoomHunter纽约全球总部的办公室',
-    description: '恭喜你！能够进入严格保密的RoomHunter纽约全球总部，这是一个连Google Map都搜索不到的未知之地。RoomHunter是一家炙手可热的科技公司，致力于将租房变得更简单。',
+    title: 'RoomHunter全球总部',
+    description: '恭喜你！能够进入严格保密的RoomHunter位于纽约的全球总部，这是一个连Google Map都搜索不到的未知之地。RoomHunter是一家炙手可热的科技公司，致力于将租房变得更简单。',
     imageUrl: 'http://roomhunter-images.b0.upaiyun.com/marketing-places/3ef8c91df56500c5552b4e5fe1b75970.jpg'
 }];
 function getRandomPlace() {
