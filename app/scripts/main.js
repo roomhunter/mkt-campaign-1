@@ -61,8 +61,11 @@ function setGameResultBy(place, name) {
 function toResult () {
   var gameView = document.getElementsByClassName('game')[0];
   var gameInputView = document.getElementsByClassName('game-input')[0];
-  gameInputView.classList.add('offset-to-left');
-  gameView.classList.add('offset-to-left');
+  var gameResultView = document.getElementsByClassName('game-result')[0];
+  //gameResultView.classList.add('offset-to-left');
+  //gameInputView.classList.add('offset-to-left');
+  //gameView.classList.add('offset-to-left');
+  gameView.classList.remove('offset-to-right');
 }
 function getIndexOf(str, arr) {
   if (str === '李忻乐' || str === '周黎' || str === '么立新') {

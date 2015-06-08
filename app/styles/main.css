@@ -69,16 +69,16 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   width: 100%;
   min-height: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   right: 0;
   bottom: 0;
-  transform: translateZ(0);
-  -moz-transform: translatez(0);
-  -ms-transform: translatez(0);
-  -o-transform: translatez(0);
-  -webkit-transform: translateZ(0);
+  /*transform: translateZ(0);*/
+  /*-moz-transform: translatez(0);*/
+  /*-ms-transform: translatez(0);*/
+  /*-o-transform: translatez(0);*/
+  /*-webkit-transform: translateZ(0);*/
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-transition: 0.5s ease-in-out;
@@ -86,8 +86,11 @@ h1, h2, h3, h4, h5, h6 {
   /*-webkit-transform-style: preserve-3d;*/
 }
 
+.offset-to-right {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
 .offset-to-left {
-  /*left: -100%;*/
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
@@ -171,14 +174,16 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .game-result {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
-  left: 100%;
+  left: 0;
   bottom: 0;
   padding: 40px 0;
   text-align: center;
   overflow-y: auto;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   -webkit-overflow-scrolling: touch;
 }
 .game-result h3 {

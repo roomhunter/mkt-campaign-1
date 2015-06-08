@@ -8,9 +8,12 @@ function initGameResultAndWx () {
 
     toGameBtn.onclick = function () {
         var gameView = document.getElementsByClassName('game')[0];
+        var gameResultView = document.getElementsByClassName('game-result')[0];
         var gameInputView = document.getElementsByClassName('game-input')[0];
-        gameInputView.classList.remove('offset-to-left');
-        gameView.classList.remove('offset-to-left');
+        //gameInputView.classList.remove('offset-to-left');
+        //gameResultView.classList.remove('offset-to-left');
+        //gameView.classList.remove('offset-to-left');
+        gameView.classList.add('offset-to-right');
         window.setTimeout(function (){
             gameView.classList.add('played');
         }, 1000);
